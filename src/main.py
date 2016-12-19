@@ -12,7 +12,7 @@ class MainHandler(tornado.web.RequestHandler):
 
 if __name__ == "__main__":
     settings = {
-        'template_path': './templates',
+        'template_path': '/data/src/templates',
         'debug': True,
     }
     application = tornado.web.Application([

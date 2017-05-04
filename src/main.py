@@ -4,7 +4,7 @@ import tornado.web
 
 class MainHandler(tornado.web.RequestHandler):
     def get(self):
-        with open("/etc/hehe/conf.ini", "r") as fp:
+        with open("/data/conf/conf.ini", "r") as fp:
             content = fp.read()
 
             self.render('index.html', content=content)
